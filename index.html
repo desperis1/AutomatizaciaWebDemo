@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMation - Future of Industry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Auto<span class="highlight">Mation</span></div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calculator">Estimator</a></li>
+                <li><a href="#contact" class="btn-primary">Get Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="decorations">
+        <img src="gear.png" class="gear gear-large spin-slow" alt="Rotating Gear">
+        <img src="gear.png" class="gear gear-small spin-fast" alt="Rotating Gear">
+        <img src="robotic_arm.png" class="robo-arm float" alt="Robotic Arm">
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1>Powering the <span class="gradient-text">Next Gen</span> Industry</h1>
+                <p>Premium pumps, advanced PLC systems, and smart sensors for the automated future.</p>
+                <a href="#services" class="btn-secondary">Explore Solutions</a>
+            </div>
+            <div class="hero-visual">
+                <img src="hero.png" alt="Futuristic Automation"
+                    style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Our Expertise</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Industrial Pumps</h3>
+                        <p>High-efficiency fluid handling for every sector.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🤖</div>
+                        <h3>PLC Automation</h3>
+                        <p>Smart control systems for seamless operations.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">📡</div>
+                        <h3>Advanced Sensors</h3>
+                        <p>Precision monitoring and real-time data.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🛠️</div>
+                        <h3>Maintenance</h3>
+                        <p>24/7 support and predictive maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="calculator-section">
+            <div class="container">
+                <h2 class="section-title">Project Estimator</h2>
+                <p class="subtitle">Adjust parameters to get a quick estimate request.</p>
+
+                <div class="calculator-box">
+                    <div class="input-group">
+                        <label for="pump-count">Number of Pumps: <span id="pump-val">1</span></label>
+                        <input type="range" id="pump-count" min="0" max="50" value="1">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="sensor-count">Sensors Required: <span id="sensor-val">10</span></label>
+                        <input type="range" id="sensor-count" min="0" max="200" value="10" step="5">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="service-level">Service Level (Years): <span id="service-val">1</span></label>
+                        <input type="range" id="service-level" min="1" max="5" value="1">
+                    </div>
+
+                    <div class="result-area">
+                        <p>Ready to upgrade your facility?</p>
+                        <button id="request-btn" class="btn-primary large">Request Quote via Email</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Let's Automate Together</h2>
+                <p>Reach out for custom solutions and engineering consultation.</p>
+                <a href="mailto:contact@automation-demo.com" class="contact-link">contact@automation-demo.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AutoMation Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
